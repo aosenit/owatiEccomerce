@@ -1,0 +1,308 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --headeHeight: 60px;
+}
+
+
+body {
+    width: 1024px;
+    background-color: gray;
+    margin:  auto;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: .5px rgba(0, 0, 0, 0.671) solid;
+    height: 45px;
+    padding: 20px;
+    background-color: #fff;
+}
+
+header a {
+    text-decoration: none;
+}
+
+.navbar a {
+    padding-right: 10px;
+}
+
+#home {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #fff;
+    padding: 30px 1rem;
+}
+
+#aboutUs {
+    text-align: center;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    padding-left: 25px;
+    font-size: 1.3rem;
+    line-height: 2rem;
+    /* border: tomato solid 2px; */
+}
+
+/* .carousel-inner {
+    display: flex;
+    flex-direction: row;
+} */
+
+.swiper {
+    width: 600px;
+    height:484px;
+  }
+
+aside {
+    overflow: scroll;
+    width: 39%;
+    background-color: #fff;
+    float: right;
+    border-left: solid black 0.5px;
+    padding: 0 10px;
+    height: 815px;
+}
+
+aside::-webkit-scrollbar {
+    width: 10px;
+    cursor: pointer;
+}
+aside::-webkit-scrollbar-track {
+    background: #fff;
+    border-radius: 10px; 
+}
+
+aside::-webkit-scrollbar-thumb {
+    background-color: #fff;    /* color of the scroll thumb */
+    border-radius: 10px;       /* roundness of the scroll thumb */
+    border: 1px solid tomato; 
+    
+}
+
+aside img {
+    max-width: 100%;
+}
+
+aside button {
+    width: 4.5rem;
+    height: 1.6rem;
+    border: none;
+    box-shadow: 1px 2px 1px black;
+    border-radius: 15px;
+    font-size: 17px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+aside button:hover {
+    transform: scale(1.01);
+    transition: all .5s ease-in-out;
+    background-color: rgb(28, 228, 28);
+    color: #fff;
+}
+
+aside span {
+    background-color: red;
+    color: #fff;
+    font-size: 18px;
+}
+
+.order-item {
+    text-align: center;
+    box-shadow: 2px 3px 4px black;
+    margin-bottom: 7px;
+    cursor: pointer;
+}
+
+.order-item:hover {
+    transform: scale(1.01);
+    transition: all 1s ease-in-out;
+}
+
+#menu {
+    float: left;
+    width: 61%;
+    background-color: #fff;
+    border-right: solid black 1px;
+}
+
+.receiptCard {
+    width: 100%;
+    border-radius: 4px;
+    box-shadow: 2px 3px 4px black;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.receiptCard:hover {
+    transform: scale(1.01);
+    transition: all 1s ease-in-out;
+}
+
+.receiptCard button {
+    width: 90%;
+    color: black;
+    background-color: red;
+    padding-left: 0;
+}
+.lineOne {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    font-size: 1.2rem;
+}
+
+.lineOneA {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cartTicket {
+    display: flex;
+    flex-direction: row;
+    margin-left: 10rem;
+}
+
+.lineTwo {
+    padding:5px;
+    display: flex;
+    flex-direction: row;
+    font-size: 1.4rem;
+    justify-content: space-around;
+}
+
+
+
+.lineOne input {
+    width: 45px;
+    height: 1.3rem;
+    margin-right: 20px;
+    border: none;
+}
+
+.bxs-cart-add, #priceDiv {
+    padding-right: 20px;
+}
+
+#priceDiv {
+    background-color: red;
+    color: #fff;
+}
+
+h2 {
+    text-align: center;
+    background-color: #fff;
+    padding-bottom: 10px;
+}
+
+#review {
+    /* display: grid;
+    grid-template-columns: 1fr 1fr 1fr; */
+    border: none;
+    display: flex;
+    flex-direction: row;
+    float: left;
+    width: 61%;
+    background-color: #fff;
+    padding: 10px;
+}
+
+#review img {
+    max-width: 100%;
+    /* max-height:5rem; */
+}
+
+#foodBlog{
+    max-width: 100%;
+    float: left;
+    background-color: #fff;
+}
+
+.cardContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 15px;
+    text-align: center;
+    line-height: 25px;
+}
+
+/* .cardContainer h4 {
+    text-align: center;
+} */
+
+.card {
+    border: none;
+    box-shadow: 2px 3px 4px black ;
+    padding: 10px;
+    margin: 3px;
+}
+
+.card:hover {
+    transform: scale(1.01);
+    transition: all ease-in-out .5s;
+    cursor: pointer;
+}
+
+.card-body1 {
+    background-image: url(https://media.gettyimages.com/photos/cold-drink-water-being-poured-into-glass-picture-id175797345?k=20&m=175797345&s=612x612&w=0&h=WKdk36Kx3wR7jh6h12BZKc8u1_9jWr-jx1G-HgRVzgQ=);
+    object-position: center;
+    object-fit: contain;
+}
+
+.card-body2 {
+    background-image: url(https://media.gettyimages.com/photos/group-of-pipettes-with-serum-and-oil-picture-id1227831823?k=20&m=1227831823&s=612x612&w=0&h=SX2jzNbybqSG5JJrpMOuiL9xs4EKaC8_ZYE9qqWM7h8=);
+    object-fit: contain;
+    object-position: center;
+    opacity: .9;
+}
+
+.card-body3 {
+    background-image: url(https://media.gettyimages.com/photos/multivitamins-with-fruit-and-veggies-picture-id186861374?k=20&m=186861374&s=612x612&w=0&h=m7ZuqD72bVUXjsPjwGhJxs_523fQIWrCDbRN26xb1RY=);
+    object-fit: contain;
+    opacity: .9;
+}
+
+.card-body4 {
+    background-image: url(https://media.gettyimages.com/photos/closeup-of-variety-of-breakfast-selections-picture-id185115135?k=20&m=185115135&s=612x612&w=0&h=WiG--SHsbYOagGrYxpBliknxd1GqVz_xKAKgrZSIe_A=);
+    object-fit: contain;
+}
+
+.card-body5 {
+    background-image: url(https://media.gettyimages.com/photos/healthy-fresh-organic-vegetables-in-a-crate-isolated-on-white-picture-id1247073860?k=20&m=1247073860&s=612x612&w=0&h=uip9qr9jzbYlOHbBKZpUhr0ujPaCcdAqOchVum5wdeU=);
+    object-fit: contain;
+}
+
+.card-body6 {
+    background-image: url(https://media.gettyimages.com/photos/pouring-extra-virgin-olive-oil-in-a-glass-bowl-picture-id1206682746?k=20&m=1206682746&s=612x612&w=0&h=cd4ccLDqWAJROPnUYpYB00D-ilqNfNAGXguVlsa8LYY=);
+    object-fit: contain;
+}
+/* .card > img {
+    max-width: 100%;
+} */
+
+/* .card-title, .card-text {
+    padding-left: 10px;
+} */
+
+.displayNone{
+    display: none;
+}
+
+.displayBlock{
+    display: block;
+}
+
+
